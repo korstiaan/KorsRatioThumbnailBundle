@@ -1,0 +1,8 @@
+parameters:
+  kors.ratiothumbnail.class: Kors\Bundle\RatioThumbnailBundle\Filter\Loader
+
+services:
+  imagine.ratiothumbnail:
+    class: %kors.ratiothumbnail.class%
+    tags:
+      - { name : imagine.filter.loader, filter: ratiothumb }
